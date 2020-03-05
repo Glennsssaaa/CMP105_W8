@@ -3,7 +3,7 @@
 Player1::Player1() {
 	speed= 0.2f;
 	setFillColor(sf::Color::Red);
-	setPosition(50, 300);
+	setPosition(100, 300);
 	setSize(sf::Vector2f(25, 100));
 	setCollisionBox(sf::FloatRect(0, 0, 25, 100));
 }

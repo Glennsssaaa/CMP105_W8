@@ -46,17 +46,17 @@ void Level::handleInput(float dt)
 			player1.handleInput(1);
 		}
 	}
-	else if(player1.getPosition().y < 50){
-		player1.setPosition(player1.getPosition().x, 50);
+	else if(player1.getPosition().y < 100){
+		player1.setPosition(player1.getPosition().x, 100);
 	}
 
-	if (player1.getPosition().y <= 600){
+	if (player1.getPosition().y <= 400){
 		if (input->isKeyDown(sf::Keyboard::S)) {
 			player1.handleInput(2);
 		}
 	}
-	else if(player1.getPosition().y > 600){
-		player1.setPosition(player1.getPosition().x, 600);
+	else if(player1.getPosition().y > 400){
+		player1.setPosition(player1.getPosition().x, 400);
 	}
 
 	if (!(input->isKeyDown(sf::Keyboard::W)) && !(input->isKeyDown(sf::Keyboard::S))) {
@@ -66,22 +66,22 @@ void Level::handleInput(float dt)
 
 	mousePos = sf::Mouse::getPosition().y;
 
-	if (player2.getPosition().y >= 50) {
+	if (player2.getPosition().y >= 100) {
 		if (mousePos <= player2.getPosition().y + 100) {
 			player2.handleInput(1);
 		}
 	}
-	else if (player2.getPosition().y < 50) {
-		player2.setPosition(player2.getPosition().x, 50);
+	else if (player2.getPosition().y < 100) {
+		player2.setPosition(player2.getPosition().x, 100);
 	}
 
-	if (player2.getPosition().y <= 600) {
+	if (player2.getPosition().y <= 400) {
 		if (mousePos > player2.getPosition().y + 100) {
 			player2.handleInput(2);
 		}
 	}
-	else if (player2.getPosition().y > 600) {
-		player2.setPosition(player2.getPosition().x, 600);
+	else if (player2.getPosition().y > 400) {
+		player2.setPosition(player2.getPosition().x, 400);
 	}
 
 }
@@ -124,11 +124,11 @@ void Level::update(float dt)
 void Level::render()
 {
 	beginDraw();
-	window->draw(ball1);
-	window->draw(ball2);
+	//window->draw(ball1);
+	//window->draw(ball2);
 
-	window->draw(square1);
-	window->draw(square2);
+	//window->draw(square1);
+	//window->draw(square2);
 
 	window->draw(player1);
 	window->draw(player2);
