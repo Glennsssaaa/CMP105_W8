@@ -157,6 +157,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Ball.cpp" />
     <ClCompile Include="Framework\Animation.cpp" />
     <ClCompile Include="Framework\Collision.cpp" />
     <ClCompile Include="Framework\Input.cpp" />
@@ -164,18 +165,27 @@
     <ClCompile Include="Framework\Vector.cpp" />
     <ClCompile Include="Level.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Player1.cpp" />
+    <ClCompile Include="Player2.cpp" />
+    <ClCompile Include="PongBall.cpp" />
+    <ClCompile Include="Squares.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="DO_NOT_EDIT.txt" />
     <Text Include="README.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Ball.h" />
     <ClInclude Include="Framework\Animation.h" />
     <ClInclude Include="Framework\Collision.h" />
     <ClInclude Include="Framework\Input.h" />
     <ClInclude Include="Framework\GameObject.h" />
     <ClInclude Include="Framework\Vector.h" />
     <ClInclude Include="Level.h" />
+    <ClInclude Include="Player1.h" />
+    <ClInclude Include="Player2.h" />
+    <ClInclude Include="PongBall.h" />
+    <ClInclude Include="Squares.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
